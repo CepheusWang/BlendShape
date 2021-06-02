@@ -92,8 +92,10 @@ public class MouthShapeApplier : MonoBehaviour
                     i--;
                 }
                 else
+                {
                     mDataToApply[i] = entry;
-
+                    mPlayTime += Time.deltaTime;
+                }
             }
         }
     }

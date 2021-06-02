@@ -15,6 +15,6 @@ MonoBehaviour:
   Destrition: Mouth_BlendShape_U
   BlendShapes:
   - BlendShape: {fileID: 11400000, guid: dd41811d9bd77e841878a4e99826cb78, type: 2}
-    value: 80
+    value: 65
     BlendStrength: 10
-  mDuration: 0.1
+  mDuration: 0.2

@@ -203,8 +203,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayHappy
+      - m_Target: {fileID: 6545650126803719233}
+        m_MethodName: PlaySmile
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -688,8 +688,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayAngry
+      - m_Target: {fileID: 6545650126803719233}
+        m_MethodName: PlayCryShape
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -883,7 +883,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F00\u5FC3\n"
+  m_Text: "\u5FAE\u7B11"
 --- !u!222 &1505156504
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1157,7 +1157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u751F\u6C14"
+  m_Text: "\u54ED"
 --- !u!222 &1886949110
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1988,6 +1988,7 @@ GameObject:
   - component: {fileID: 4714471763580121664}
   - component: {fileID: 6545650126803719231}
   - component: {fileID: 6545650126803719232}
+  - component: {fileID: 6545650126803719233}
   - component: {fileID: 6545650126803719230}
   m_Layer: 0
   m_Name: face303
@@ -2123,6 +2124,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRecoverSmoothness: 5
+--- !u!114 &6545650126803719233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6545650126803719229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ade552232a2684b9451735f4eece05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mFacialShapeAnimator: {fileID: 0}
 --- !u!1 &6990381307538128455
 GameObject:
   m_ObjectHideFlags: 0

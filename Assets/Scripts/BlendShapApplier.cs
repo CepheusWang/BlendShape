@@ -22,16 +22,15 @@ public class BlendShapApplier : MonoBehaviour
         for (int i = 0; i < data.mMouthAudioFrame.Count; ++i)
         {
             MouthAudioKeyFrame keyframe = data.mMouthAudioFrame[i];
-            float keyframeDuration = keyframe.mData.mDuration;
-            if (time > keyframe.mTime && time < (keyframe.mTime + keyframeDuration))
+            float keyframeDuration = Mathf.Max(keyframe.mData.mDuration, keyframe.mTime);
+            if (time > keyframe.mSTime && time < (keyframe.mSTime + keyframeDuration))
             {
-                float keyframeProgress = (time - keyframe.mTime) / keyframeDuration;
-                ApplyBlendSet(keyframe.mData, keyframeProgress);
+                ApplyBlendSet(keyframe.mData);
             }
         }
     }
 
-    public void ApplyBlendSet(BlendShapeMouthItemData data, float t)
+    public void ApplyBlendSet(BlendShapeMouthItemData data)
     {
         for (int i = 0; i < data.BlendShapes.Count; ++i)
         {

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74cc3ab485e53904dbbc830229c5f069, type: 3}
+  m_Name: MouthAudioData
+  m_EditorClassIdentifier: 
+  mTime: 0
+  Sound: {fileID: 8300000, guid: ff0b6f4e610814f449d877663e1c8f94, type: 3}
+  ReferenceText: chuang ye zhe cheng le zhi hui shi dai de gong pin
+  mMouthAudioFrame:
+  - mTime: 0.8
+    mVoiceKeyText: chuang
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.16
+    mVoiceKeyText: 'ye '
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.32
+    mVoiceKeyText: zhe
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.16
+    mVoiceKeyText: cheng
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.32
+    mVoiceKeyText: le
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.16
+    mVoiceKeyText: zhi
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.32
+    mVoiceKeyText: hui
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.16
+    mVoiceKeyText: shi
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.16
+    mVoiceKeyText: dai
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.16
+    mVoiceKeyText: de
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.16
+    mVoiceKeyText: gong
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - mTime: 0.48
+    mVoiceKeyText: pin
+    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}

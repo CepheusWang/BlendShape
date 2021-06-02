@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c48a2eebbb510274db70224656c7c123, type: 3}
+  m_Name: Smile_01
+  m_EditorClassIdentifier: 
+  m_kEnmojeName: Smile_01
+  m_kBlendShapeDatas:
+  - {fileID: 11400000, guid: 15beb35b56bb7634884f1ee134d177b6, type: 2}
+  - {fileID: 11400000, guid: b4eda06a393597d4e8f597c9778111e7, type: 2}
+  - {fileID: 11400000, guid: 21230543f6bddcd42ac374542149df77, type: 2}
+  Destriction: "\u839E\u5C14\u4E00\u7B11\uFF08\u6D4B\u8BD5\u6570\u636E\uFF09"

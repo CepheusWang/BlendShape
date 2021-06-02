@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c48a2eebbb510274db70224656c7c123, type: 3}
+  m_Name: Angry_01
+  m_EditorClassIdentifier: 
+  m_kEnmojeName: Angry_01
+  m_kBlendShapeDatas:
+  - {fileID: 11400000, guid: ad5df3c06232fc447bc65020f317e29b, type: 2}
+  - {fileID: 11400000, guid: f5a9cc43a46dc4842af878c730321f03, type: 2}
+  - {fileID: 11400000, guid: cd06918c1f83da34bb3e40242080b325, type: 2}
+  - {fileID: 11400000, guid: 9fcd1012c34bf6c4c877beddcb2436a4, type: 2}
+  - {fileID: 11400000, guid: ae849577462149f4da3bdfe91fcb4641, type: 2}
+  Destriction: "\u6D4B\u8BD5\u6570\u636E\u914D\u7F6E\u751F\u6C14"

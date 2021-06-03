@@ -805,7 +805,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 122321321321
 --- !u!222 &1346918135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1675,7 +1675,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5577778557308740598}
   - component: {fileID: 5054042254622980429}
-  - component: {fileID: 5054042254622980430}
   m_Layer: 0
   m_Name: Mopher_Test
   m_TagString: Untagged
@@ -1702,18 +1701,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5054042254622980430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5054042254622980428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1320b5aff06684744b5202fe039364d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &5577778557308740598
 Transform:
   m_ObjectHideFlags: 0
@@ -1961,6 +1948,7 @@ MonoBehaviour:
   mMouthAudioData: {fileID: 11400000, guid: 7fbea538bb7be76419d28ee476540eca, type: 2}
   mAudioSource: {fileID: 6455931367148554681}
   mBpApplier: {fileID: 6455931367148554683}
+  mMouthItemData: []
   m_keyText: {fileID: 0}
   mPlayTime: 0
 --- !u!114 &6455931367148554683
@@ -2109,6 +2097,12 @@ MonoBehaviour:
   mMouthAudioData: {fileID: 11400000, guid: 7fbea538bb7be76419d28ee476540eca, type: 2}
   mAudioSource: {fileID: 6545650126803719230}
   mBpApplier: {fileID: 6545650126803719232}
+  mMouthItemData:
+  - {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+  - {fileID: 11400000, guid: 6f59a8065f20f6f4fb4a23b1a932c4f3, type: 2}
+  - {fileID: 11400000, guid: af5865d9ef4fbc94da3b87ab2e65eea8, type: 2}
+  - {fileID: 11400000, guid: a18b95999d6001f4b9e438087442c19c, type: 2}
+  - {fileID: 11400000, guid: 5565e3b9c6268474e9beccb72383372c, type: 2}
   m_keyText: {fileID: 1346918134}
   mPlayTime: 0
 --- !u!114 &6545650126803719232

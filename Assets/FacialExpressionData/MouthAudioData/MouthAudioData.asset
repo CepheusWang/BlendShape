@@ -19,48 +19,48 @@ MonoBehaviour:
   - mTime: 0.8
     mSTime: 0
     mVoiceKeyText: chuang
-    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+    mMouthType: 2
   - mTime: 0.16
     mSTime: 0.96
     mVoiceKeyText: 'ye '
-    mData: {fileID: 11400000, guid: 6f59a8065f20f6f4fb4a23b1a932c4f3, type: 2}
+    mMouthType: 1
   - mTime: 0.32
     mSTime: 1.28
     mVoiceKeyText: zhe
-    mData: {fileID: 11400000, guid: af5865d9ef4fbc94da3b87ab2e65eea8, type: 2}
+    mMouthType: 0
   - mTime: 0.16
     mSTime: 1.44
     mVoiceKeyText: cheng
-    mData: {fileID: 11400000, guid: a18b95999d6001f4b9e438087442c19c, type: 2}
+    mMouthType: 0
   - mTime: 0.32
     mSTime: 1.76
     mVoiceKeyText: le
-    mData: {fileID: 11400000, guid: 5565e3b9c6268474e9beccb72383372c, type: 2}
+    mMouthType: 0
   - mTime: 0.16
     mSTime: 1.92
     mVoiceKeyText: zhi
-    mData: {fileID: 11400000, guid: 5565e3b9c6268474e9beccb72383372c, type: 2}
+    mMouthType: 1
   - mTime: 0.32
     mSTime: 2.24
     mVoiceKeyText: hui
-    mData: {fileID: 11400000, guid: af5865d9ef4fbc94da3b87ab2e65eea8, type: 2}
+    mMouthType: 2
   - mTime: 0.16
     mSTime: 2.4
     mVoiceKeyText: shi
-    mData: {fileID: 11400000, guid: 6f59a8065f20f6f4fb4a23b1a932c4f3, type: 2}
+    mMouthType: 0
   - mTime: 0.16
     mSTime: 2.56
     mVoiceKeyText: dai
-    mData: {fileID: 11400000, guid: ce69d2a7e01f5294b94733110642f8f8, type: 2}
+    mMouthType: 0
   - mTime: 0.16
     mSTime: 2.72
     mVoiceKeyText: de
-    mData: {fileID: 11400000, guid: af5865d9ef4fbc94da3b87ab2e65eea8, type: 2}
+    mMouthType: 0
   - mTime: 0.16
     mSTime: 2.88
     mVoiceKeyText: gong
-    mData: {fileID: 11400000, guid: a18b95999d6001f4b9e438087442c19c, type: 2}
+    mMouthType: 2
   - mTime: 0.48
     mSTime: 3.36
     mVoiceKeyText: pin
-    mData: {fileID: 11400000, guid: 5565e3b9c6268474e9beccb72383372c, type: 2}
+    mMouthType: 1

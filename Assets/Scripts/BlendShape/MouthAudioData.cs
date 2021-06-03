@@ -24,12 +24,14 @@ public class MouthAudioData : ScriptableObject
         for(int i = 0;i<mMouthAudioFrame.Count;i++)
         {
             MouthAudioKeyFrame frame = mMouthAudioFrame[i];
-            if (frame.mData)
+            if (frame.MouthItemData)
             {
-                duration = Mathf.Max(frame.mTime+frame.mData.mDuration,duration);
+                duration = Mathf.Max(frame.mTime+frame.MouthItemData.mDuration,duration);
             }
         }
 
         return duration;
     }
+
+   
 }

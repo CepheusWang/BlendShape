@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37910e559d6f6be438403d9bc54135df, type: 3}
   m_Name: BlendShapeMouthItemData_E
   m_EditorClassIdentifier: 
-  Destrition: Mouth_BlendShape_FVE
+  Destrition: Mouth_BlendShape_E
   BlendShapes:
   - BlendShape: {fileID: 11400000, guid: 656cdb5ddde355d40a92e7e19fde0665, type: 2}
     value: 10

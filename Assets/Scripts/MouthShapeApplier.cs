@@ -3,7 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum MouthBlendShapeType
+{
+    /// <summary>
+    /// 口型A E O 发音口型
+    /// </summary>
+    MOUTH_TYPE_1,
+    /// <summary>
+    /// 口型I
+    /// </summary>
+    MOUTH_TYPE_2,
 
+    /// <summary>
+    /// 口型U
+    /// </summary>
+    MOUTY_TYPE_3,
+
+}
 /// <summary>
 /// 嘴型发音口型匹配
 /// </summary>
@@ -22,7 +38,7 @@ public class MouthShapeApplier : MonoBehaviour
 
     private List<DataEntry> mDataToApply = new List<DataEntry>(sDefaultDataSize);
     private Stack<DataEntry> mDataPool = new Stack<DataEntry>(sDefaultDataSize);
-
+    public List<BlendShapeMouthItemData> mMouthItemData = new List<BlendShapeMouthItemData>();
 
     public struct DataEntry
     {
@@ -67,6 +83,7 @@ public class MouthShapeApplier : MonoBehaviour
 
     private DataEntry GetDataEntry(MouthAudioData _data )
     {
+        SetMouthShapeItemData(_data);
         DataEntry entry = mDataPool.Count > 0 ? mDataPool.Pop() : new DataEntry();
         entry.Time = 0f;
         entry.Data = _data;
@@ -106,4 +123,40 @@ public class MouthShapeApplier : MonoBehaviour
         mBpApplier.RemoveBlendShape(entry.Data);
         mDataToApply.RemoveAt(index);
     }
+
+    private void SetMouthShapeItemData(MouthAudioData  data)
+    {
+        if(data!=null)
+        {
+            if(data.mMouthAudioFrame!=null)
+            {
+                for(int i = 0;i<data.mMouthAudioFrame.Count;i++)
+                {
+                    BlendShapeMouthItemData mouthData = MatchMouthItemData(data.mMouthAudioFrame[i].mMouthType);
+                    Debug.Log(string.Format("Index={0}...name={1}",i, mouthData.Destrition));
+                    data.mMouthAudioFrame[i].MouthItemData = mouthData;
+                }
+            }
+        }
+    }
+
+    private BlendShapeMouthItemData MatchMouthItemData(MouthBlendShapeType _type)
+    {
+        BlendShapeMouthItemData item = null;
+        switch (_type)
+        {
+            case MouthBlendShapeType.MOUTH_TYPE_1:
+                item = mMouthItemData[0];
+                break;
+            case MouthBlendShapeType.MOUTH_TYPE_2:
+                item = mMouthItemData[2];
+                break;
+            case MouthBlendShapeType.MOUTY_TYPE_3:
+                item = mMouthItemData[4];
+                break;
+        }
+
+        return item;
+    }
+
 }

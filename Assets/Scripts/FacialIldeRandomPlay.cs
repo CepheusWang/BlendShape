@@ -12,7 +12,7 @@ public class FacialIldeRandomPlay : StateMachineBehaviour
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
-        mTime = Random.Range(2, mRandomIdleTime);
+        mTime = Random.Range(0, mRandomIdleTime);
         mIdleState = true;
     }
 

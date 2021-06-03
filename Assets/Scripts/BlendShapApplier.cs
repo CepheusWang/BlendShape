@@ -22,11 +22,11 @@ public class BlendShapApplier : MonoBehaviour
         for (int i = 0; i < data.mMouthAudioFrame.Count; ++i)
         {
             MouthAudioKeyFrame keyframe = data.mMouthAudioFrame[i];
-            float keyframeDuration = Mathf.Max(keyframe.mData.mDuration, keyframe.mTime);
+            float keyframeDuration = Mathf.Max(keyframe.MouthItemData.mDuration, keyframe.mTime);
             if (time > keyframe.mSTime && time < (keyframe.mSTime + keyframeDuration))
             {
                 //Debug.Log("keyFrame=="+ keyframe.mVoiceKeyText+"   Time=="+mPlayTime);
-                ApplyBlendSet(keyframe.mData);
+                ApplyBlendSet(keyframe.MouthItemData);
                 mPlayTime += Time.deltaTime;
 
             }
@@ -87,13 +87,13 @@ public class BlendShapApplier : MonoBehaviour
         {
             for (int i = 0; i < data.mMouthAudioFrame.Count; i++)
             {
-                for (int j = 0; j < data.mMouthAudioFrame[i].mData.BlendShapes.Count; j++)
+                for (int j = 0; j < data.mMouthAudioFrame[i].MouthItemData.BlendShapes.Count; j++)
                 {
-                    if (mApplyData.ContainsKey(data.mMouthAudioFrame[i].mData.BlendShapes[j].BlendShape))
+                    if (mApplyData.ContainsKey(data.mMouthAudioFrame[i].MouthItemData.BlendShapes[j].BlendShape))
                     {
-                        ApplyBlendShape(data.mMouthAudioFrame[i].mData.BlendShapes[j].BlendShape, 0);
-                        mApplyData.Remove(data.mMouthAudioFrame[i].mData.BlendShapes[j].BlendShape);
-                        mModifiedIds.Remove(data.mMouthAudioFrame[i].mData.BlendShapes[j].BlendShape);
+                        ApplyBlendShape(data.mMouthAudioFrame[i].MouthItemData.BlendShapes[j].BlendShape, 0);
+                        mApplyData.Remove(data.mMouthAudioFrame[i].MouthItemData.BlendShapes[j].BlendShape);
+                        mModifiedIds.Remove(data.mMouthAudioFrame[i].MouthItemData.BlendShapes[j].BlendShape);
                     }
                 }
             }

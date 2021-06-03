@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-public class MouthAudioKeyFrame 
+public class MouthAudioKeyFrame
 {
     /// <summary>
     /// 持续时间
@@ -15,5 +15,12 @@ public class MouthAudioKeyFrame
     /// </summary>
     public float mSTime;
     public string mVoiceKeyText;
-    public BlendShapeMouthItemData mData;
+    private BlendShapeMouthItemData mData;
+    public MouthBlendShapeType mMouthType;
+
+    public BlendShapeMouthItemData MouthItemData
+    {
+        get { return mData; }
+        set { mData = value; }
+    }
 }

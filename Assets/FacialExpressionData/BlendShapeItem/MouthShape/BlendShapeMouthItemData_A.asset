@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37910e559d6f6be438403d9bc54135df, type: 3}
+  m_Name: BlendShapeMouthItemData_A
+  m_EditorClassIdentifier: 
+  Destrition: Mouth_BlendShape_AI
+  BlendShapes:
+  - BlendShape: {fileID: 11400000, guid: 5a25e3a59d190244f9482d7eed331c86, type: 2}
+    value: 42
+    BlendStrength: 5
+  - BlendShape: {fileID: 11400000, guid: 8ae23671cc5fbe6418c35c159fd9a398, type: 2}
+    value: 40
+    BlendStrength: 5
+  - BlendShape: {fileID: 11400000, guid: cfe043db0384d51498e1f49507f40a0b, type: 2}
+    value: 6
+    BlendStrength: 1
+  mDuration: 0.2

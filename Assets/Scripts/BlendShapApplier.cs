@@ -16,7 +16,7 @@ public class BlendShapApplier : MonoBehaviour
     {
         Apply();
     }
-
+    private float mPlayTime = 0;
     public void ApplyBlendData(MouthAudioData data, float time)
     {
         for (int i = 0; i < data.mMouthAudioFrame.Count; ++i)
@@ -25,8 +25,10 @@ public class BlendShapApplier : MonoBehaviour
             float keyframeDuration = Mathf.Max(keyframe.mData.mDuration, keyframe.mTime);
             if (time > keyframe.mSTime && time < (keyframe.mSTime + keyframeDuration))
             {
-                Debug.Log("Text=="+ keyframe.mVoiceKeyText);
+                //Debug.Log("keyFrame=="+ keyframe.mVoiceKeyText+"   Time=="+mPlayTime);
                 ApplyBlendSet(keyframe.mData);
+                mPlayTime += Time.deltaTime;
+
             }
         }
     }
@@ -61,7 +63,7 @@ public class BlendShapApplier : MonoBehaviour
     public void ApplyBlendShape(BlendShapeID id, float value)
     {
         if (!mMesh)
-             mMesh = GetComponent<SkinnedMeshRenderer>();
+            mMesh = GetComponent<SkinnedMeshRenderer>();
 
         int index = mMesh.sharedMesh.GetBlendShapeIndex(id.mBlendShapeNodeName);
         mMesh.SetBlendShapeWeight(index, value);
@@ -69,7 +71,7 @@ public class BlendShapApplier : MonoBehaviour
     }
     private void ApplyBlendShapeDrag()
     {
-        if(mModifiedIds!=null && mModifiedIds.Count>0)
+        if (mModifiedIds != null && mModifiedIds.Count > 0)
         {
             foreach (var id in mModifiedIds)
             {
@@ -83,13 +85,13 @@ public class BlendShapApplier : MonoBehaviour
     {
         if (data != null)
         {
-            for(int i = 0;i<data.mMouthAudioFrame.Count;i++)
+            for (int i = 0; i < data.mMouthAudioFrame.Count; i++)
             {
-               for(int j =0;j<data.mMouthAudioFrame[i].mData.BlendShapes.Count;j++)
+                for (int j = 0; j < data.mMouthAudioFrame[i].mData.BlendShapes.Count; j++)
                 {
-                     if(mApplyData.ContainsKey(data.mMouthAudioFrame[i].mData.BlendShapes[j].BlendShape))
+                    if (mApplyData.ContainsKey(data.mMouthAudioFrame[i].mData.BlendShapes[j].BlendShape))
                     {
-                        ApplyBlendShape(data.mMouthAudioFrame[i].mData.BlendShapes[j].BlendShape,0);
+                        ApplyBlendShape(data.mMouthAudioFrame[i].mData.BlendShapes[j].BlendShape, 0);
                         mApplyData.Remove(data.mMouthAudioFrame[i].mData.BlendShapes[j].BlendShape);
                         mModifiedIds.Remove(data.mMouthAudioFrame[i].mData.BlendShapes[j].BlendShape);
                     }

@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74cc3ab485e53904dbbc830229c5f069, type: 3}
+  m_Name: MouthAudioData_1
+  m_EditorClassIdentifier: 
+  mTime: 7.84
+  Sound: {fileID: 8300000, guid: 2cfc9afa040ab1d43a42073de359d8c7, type: 3}
+  ReferenceText: guo shi ying yong shi ren wen di shen jie  de che shi ling jie 
+    xu san men de cheng zui shou xian  ying  yong shi ren de  chan lian geng  jun
+  mMouthAudioFrame:
+  - mTime: 0.16
+    mSTime: 0.64
+    mVoiceKeyText: guo
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 0.8
+    mVoiceKeyText: shi
+    mMouthType: 1
+  - mTime: 0.16
+    mSTime: 0.96
+    mVoiceKeyText: ying
+    mMouthType: 1
+  - mTime: 0.16
+    mSTime: 1.12
+    mVoiceKeyText: yong
+    mMouthType: 2
+  - mTime: 0.16
+    mSTime: 1.28
+    mVoiceKeyText: shi
+    mMouthType: 1
+  - mTime: 0.48
+    mSTime: 1.44
+    mVoiceKeyText: ren
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 1.92
+    mVoiceKeyText: wen
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 2.08
+    mVoiceKeyText: di
+    mMouthType: 1
+  - mTime: 0.16
+    mSTime: 3.04
+    mVoiceKeyText: shen
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 3.2
+    mVoiceKeyText: jie
+    mMouthType: 1
+  - mTime: 0.16
+    mSTime: 3.36
+    mVoiceKeyText: de
+    mMouthType: 0
+  - mTime: 0.32
+    mSTime: 3.52
+    mVoiceKeyText: che
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 4.16
+    mVoiceKeyText: shi
+    mMouthType: 1
+  - mTime: 0.16
+    mSTime: 4.32
+    mVoiceKeyText: ling
+    mMouthType: 1
+  - mTime: 0.16
+    mSTime: 4.48
+    mVoiceKeyText: xu
+    mMouthType: 2
+  - mTime: 0.16
+    mSTime: 4.64
+    mVoiceKeyText: san
+    mMouthType: 0
+  - mTime: 0.32
+    mSTime: 4.8
+    mVoiceKeyText: jie
+    mMouthType: 1
+  - mTime: 0.32
+    mSTime: 5.12
+    mVoiceKeyText: men
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 5.44
+    mVoiceKeyText: de
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 5.6
+    mVoiceKeyText: cheng
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 5.76
+    mVoiceKeyText: zui
+    mMouthType: 2
+  - mTime: 0.16
+    mSTime: 5.92
+    mVoiceKeyText: shou
+    mMouthType: 0
+  - mTime: 0.32
+    mSTime: 6.08
+    mVoiceKeyText: xian
+    mMouthType: 1
+  - mTime: 0.16
+    mSTime: 6.4
+    mVoiceKeyText: ying
+    mMouthType: 1
+  - mTime: 0.16
+    mSTime: 6.56
+    mVoiceKeyText: yong
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 6.72
+    mVoiceKeyText: shi
+    mMouthType: 1
+  - mTime: 0.16
+    mSTime: 6.88
+    mVoiceKeyText: ren
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 7.04
+    mVoiceKeyText: de
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 7.2
+    mVoiceKeyText: chan
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 7.36
+    mVoiceKeyText: lian
+    mMouthType: 1
+  - mTime: 0.16
+    mSTime: 7.52
+    mVoiceKeyText: geng
+    mMouthType: 0
+  - mTime: 0.16
+    mSTime: 7.68
+    mVoiceKeyText: jun
+    mMouthType: 2

@@ -133,7 +133,7 @@ public class MouthShapeApplier : MonoBehaviour
                 for(int i = 0;i<data.mMouthAudioFrame.Count;i++)
                 {
                     BlendShapeMouthItemData mouthData = MatchMouthItemData(data.mMouthAudioFrame[i].mMouthType);
-                    Debug.Log(string.Format("Index={0}...name={1}",i, mouthData.Destrition));
+                    //Debug.Log(string.Format("Index={0}...name={1}",i, mouthData.Destrition));
                     data.mMouthAudioFrame[i].MouthItemData = mouthData;
                 }
             }

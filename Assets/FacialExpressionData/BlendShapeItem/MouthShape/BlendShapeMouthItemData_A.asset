@@ -23,4 +23,7 @@ MonoBehaviour:
   - BlendShape: {fileID: 11400000, guid: cfe043db0384d51498e1f49507f40a0b, type: 2}
     value: 6
     BlendStrength: 1
+  - BlendShape: {fileID: 11400000, guid: 64d8adfc246f50344981756101d6b4ae, type: 2}
+    value: 60
+    BlendStrength: 1
   mDuration: 0.2
